@@ -142,7 +142,7 @@ p{
     font-size: 0.96em;
 }
 
-.dropdown button{
+button{
     border: none;
     background: none;
     padding: 0;
@@ -155,16 +155,8 @@ p{
     z-index: 2;
 }
 
-.dropdown div{
-    display: none;
-}
-
-.dropdown:hover div{
-    display: block;
-}
-
-.dropdown div img{
+#kaartimg{
     width: 91.5%;
-    display: block;
+    display: none;
     margin: auto;
 }
