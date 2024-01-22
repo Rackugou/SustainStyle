@@ -7,16 +7,19 @@
 @font-face {
     font-family: 'savoye';
     src: url(fonts/Savoye\ LET.ttc);
+    font-display: auto;
 }
 
 @font-face {
     font-family: 'bodoni';
     src: url(fonts/Bodoni\ 72\ Smallcaps\ Book.ttf);
+    font-display: auto;
 }
 
 @font-face {
     font-family: 'abhayalibre';
     src: url(fonts/AbhayaLibre-Regular.ttf);
+    font-display: auto;
 }
 
 header{
@@ -24,6 +27,7 @@ header{
     height: 3.5em;
     padding: 0.2em;
     box-shadow: 0 0px 8px 0 rgb(0, 0, 0);
+    position: relative;
 }
 
 nav ul{
@@ -54,33 +58,37 @@ body{
     background-color: #F7F3E3;
 }
 
-main section:nth-child(1){
+.h1opmaak{
     display: flex;
     justify-content: center;
     margin-top: 1em;
-}
-
-main section:nth-child(1) img{
     height: 2em;
 }
 
+#h1opmaak-nj{
+    display: flex;
+    justify-content: center;
+    height: 2em;
+}
+
+
 h1{
- font-family: savoye;
+ font-family: savoye, serif;
  color: #603913;
  font-weight: 100;
  font-size: 3em;   
 }
 
 h2{
-    font-family: bodoni;
+    font-family: bodoni, serif;
 }
 
 p{
-    font-family: abhayalibre;
+    font-family: abhayalibre, serif;
 }
 
 #eersteh2{
-    margin: 0 0 0.2em 0.7em;
+    margin: 1em 0 0.2em 0.7em;
 }
 
 #eerstep{
@@ -100,6 +108,12 @@ p{
     display: block;
     margin: auto;
     width: 95%;
+}
+
+#decostreep-nj{
+    position: relative;
+    top: -7px;
+    width: 100%;
 }
 
 .decostreep-onder{
@@ -135,28 +149,66 @@ p{
 }
 
 .card-text{
+    display: flex;
+    flex-direction: column;
     margin: 0.4em;
+
 }
 
 .card-text p{
-    font-size: 0.96em;
+    font-size: 0.93em;
+}
+
+.card-text a{
+    font-size: smaller;
+    z-index: 4;
+    color: #603913;
 }
 
 button{
     border: none;
     background: none;
-    padding: 0;
-    margin: 0;
     cursor: pointer;
     font: inherit;
-    position: absolute;
-    top: 17em;
-    left: 8.5em;
-    z-index: 2;
+    position: relative;
+    z-index: 3;
+    width: 5em;
+    margin: auto;
 }
 
-#kaartimg{
+.kaartimg{
     width: 91.5%;
     display: none;
     margin: auto;
+}
+
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.nj-layout img{
+    height: 137px;
+}
+
+.nj-layout{
+    display: flex;
+    margin: 1em;
+}
+
+#kleding{
+    margin-left: 1em;
+}
+
+#kaart{
+    margin-right: 1em;
+}
+
+#p404{
+    text-align: center;
+    margin: 1em;
+}
+#p404 img{
+    margin-top: 5em;
+    height: 10em;
 }
