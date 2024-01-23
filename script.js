@@ -1,10 +1,12 @@
-for (let index = 1; index < 10; index++) {
+for (let index = 1; index < 7; index++) {
     
     const img_selector = "#img-" + index
     const img = document.querySelector(img_selector);
 
     const button_selector = "#toggleButton" + index
     const button = document.querySelector(button_selector)
+
+    if (button) {
 
     button.addEventListener("click", () => {
         if (img.style.display === 'none') {
@@ -15,4 +17,4 @@ for (let index = 1; index < 10; index++) {
             button.innerHTML = 'Locatie &#9650;';
         }
     })
-}
+}}

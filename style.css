@@ -87,8 +87,20 @@ p{
     font-family: abhayalibre, serif;
 }
 
+#info{
+    display: flex;
+    gap: 0.3em;
+}
+
+#info img{
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 1.7em;
+}
+
 #eersteh2{
     margin: 1em 0 0.2em 0.7em;
+    color: #60845A;
 }
 
 #eerstep{
@@ -162,7 +174,7 @@ p{
 .card-text a{
     font-size: smaller;
     z-index: 4;
-    color: #603913;
+    color: #60845A;
 }
 
 button{
@@ -202,6 +214,15 @@ button{
 
 #kaart{
     margin-right: 1em;
+}
+
+#cover{
+    width: 100%;
+}
+
+#img-binnen{
+    width: 90%;
+    margin: 1em;
 }
 
 #p404{
