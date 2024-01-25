@@ -43,7 +43,7 @@ nav ul li:nth-last-child(-n+2){
 nav ul li a{
     text-decoration: none;
     color: #F7F3E3;
-    font-family: bodoni;
+    font-family: bodoni, serif;
 }
 
 nav ul li:nth-last-child(-n+2) a{
